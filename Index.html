@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MoodScape</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="background-blur blur1"></div>
+<div class="background-blur blur2"></div>
+
+<header>
+  <div class="logo">MoodScape ✨</div>
+  <nav>
+    <a href="#">Explore</a>
+    <a href="#">Journal</a>
+    <a href="#">Vibes</a>
+  </nav>
+</header>
+
+<main class="hero">
+  <div class="hero-text">
+    <span class="tag">DIGITAL EMOTION EXPERIENCE</span>
+    <h1>Turn Your Mood Into A Beautiful Universe.</h1>
+    <p>
+      Describe your feelings and MoodScape transforms them into colors,
+      music vibes, quotes, atmosphere and aesthetic visuals.
+    </p>
+
+    <div class="input-box">
+      <textarea id="moodInput" placeholder="How are you feeling today?"></textarea>
+      <button onclick="generateMood()">Generate Mood</button>
+    </div>
+  </div>
+
+  <div class="glass-card" id="moodCard">
+    <h2>Your Mood Space</h2>
+    <div class="mood-circle"></div>
+
+    <div class="results">
+      <div class="result-item">
+        <h3>🎵 Vibe</h3>
+        <p id="music">Waiting for your mood...</p>
+      </div>
+
+      <div class="result-item">
+        <h3>💭 Quote</h3>
+        <p id="quote">Your emotional universe will appear here.</p>
+      </div>
+
+      <div class="result-item">
+        <h3>🌈 Energy</h3>
+        <p id="energy">Unknown</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<section class="features">
+  <div class="feature-card">
+    <span>🌌</span>
+    <h3>Ambient Universe</h3>
+    <p>Animated gradients and floating particles react to your emotions.</p>
+  </div>
+
+  <div class="feature-card">
+    <span>📓</span>
+    <h3>Mini Journal</h3>
+    <p>Save your feelings and track emotional patterns over time.</p>
+  </div>
+
+  <div class="feature-card">
+    <span>🎧</span>
+    <h3>Music Aura</h3>
+    <p>Get curated music vibes matching your emotional energy.</p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
